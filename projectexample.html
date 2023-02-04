@@ -1,0 +1,332 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <style>
+        .header-container {
+            margin-top: 4%;
+            margin-left: 7%;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+     body {
+  background-color: #377f8d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing;
+  animation-duration: 1.5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+}
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+.name,h2 {
+  font-family: 'Itim', cursive;
+font-size: 40px;
+font-weight: 500;
+text-transform: uppercase;
+letter-spacing: 3px;
+color: rgb(152, 255, 234);
+text-shadow: 2px 2px rgb(186, 163, 249);
+}
+h4{
+    text-align: center;
+  font-family: 'Itim', cursive;
+font-size: 17px;
+font-weight: 300;
+text-transform: uppercase;
+letter-spacing: 3px;
+color: rgb(152, 255, 234);
+text-shadow: 2px 2px rgb(186, 163, 249);
+}
+img {
+height: 250px;
+width: 220px;
+  border-radius: 5%;
+  opacity: 0;
+  animation: fadeIn 4s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+nav {
+  margin-right: 0.5%;
+  margin-top: 2%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  font-family: 'Itim', cursive;
+  font-size: 20px;
+  font-weight: 60;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  z-index: 2;
+}
+nav a:hover {
+  position: relative;
+}
+
+nav a:hover:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: rgb(186, 163, 249); /* Change this color to desired color */
+  animation: underline-move 1s ease-in-out forwards;
+}
+
+@keyframes underline-move {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+a {
+margin-left: 10px;
+text-decoration: none;
+color: rgb(152, 255, 234);
+text-shadow: 2px 2px rgb(186, 163, 249);
+}
+.area{
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 500;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 60%;
+    }
+}
+.projects-section {
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
+.project {
+  position: relative;
+  width: 30%;
+  margin: 0 20px;
+}
+
+.project-description {
+    font-family: 'Itim', cursive;
+  font-size: 14px;
+  font-weight: 60;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: rgb(152, 255, 234);
+text-shadow: 2px 2px rgb(186, 163, 249);
+border-radius: 5%;
+height: 220px;
+width: 202px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(186, 163, 249);
+  padding: 15px;
+}
+
+.project:hover .project-description {
+  display: block;
+}
+</style>
+</head>
+<body>
+    <header class = "header-container">
+      <h2 class="typed">Projects</h2>
+    </header>
+    <nav>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="aboutmeexample.html">About Me</a>
+        <a class="nav-link" href="projectexample.html">Projects</a>
+        <a class="nav-link" href="contactexample.html">Links/Contact</a>
+</nav>
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <div class="projects">
+      <div class="project">
+       <img src="http://cdn.shopify.com/s/files/1/0057/4322/products/IMG_0241.jpg?v=1571305799" alt="Project 1"></a>
+       <a href="https://github.com/Davidls22/Caesar-Cipher"><div class="project-description">
+            <h4>Caesar Cipher</h4>
+          <p>The cipher encodes messages by replacing each letter with the 15th letter after it in the alphabet.</p>
+        </div></a>
+      </div>
+      <div class="project">
+        <img src="https://thumbs.dreamstime.com/b/calculator-isolated-black-background-business-concept-copy-space-text-calculator-isolated-black-background-168129062.jpg" alt="Project 2">
+        <a href="https://github.com/Davidls22/Calculator"><div class="project-description">
+          <h4>Calculator</h4>
+          <p>Simple calculator taking two numbers from a user and options to add, subtract, multiply and divide</p>
+        </div>
+      </div>
+    </a>
+      <div class="project">
+        <img src="https://wallpapers.com/images/featured/7ws46k7xo1gcptjo.jpg" alt="Project 3">
+        <a href="https://github.com/Davidls22/City-Information"><div class="project-description">
+          <h4>City Information</h4>
+          <p>Module finding information on particular city and showing population size, elevation and current temperature using APIs</p>
+        </div>
+      </div>
+    </a>
+      <div class="project">
+        <img src="https://cdn.dribbble.com/users/1533227/screenshots/3713418/media/06a3fe0727f35e3127fa3d95106195cf.jpg?compress=1&resize=400x300" alt="Project 4">
+        <a href="https://github.com/Davidls22/Palindrome"><div class="project-description">
+          <h4>Palindrome Checker</h4>
+          <p>Takes any word input from user and will show whether it is a palindrome or not</p>
+        </div>
+      </div>
+    </a>
+      <div class="project">
+        <img src="https://thumbs.dreamstime.com/b/payment-method-icon-isolated-black-background-payment-method-icon-isolated-black-background-simple-vector-logo-156756367.jpg" alt="Project 5">
+        <a href="https://github.com/Davidls22/OOP-Sales-Management-System"><div class="project-description">
+          <h4>OOP Sales Management System</h4>
+          <p>OOP based sales management system that calculates the compensation for employees in a sales department.</p>
+        </div>
+      </div>
+      </div>
+    </a>
+    </div>
+  </body>
+</html>
