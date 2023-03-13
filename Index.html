@@ -4,13 +4,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <style>
-     body {
-  background-color: #377f8d;
+body {
+  background-color: #444444;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
+
 .typed {
   overflow: hidden;
   white-space: nowrap;
@@ -20,32 +21,36 @@
   animation-timing-function: steps(30, end);
   animation-fill-mode: forwards;
 }
+
 @keyframes typing {
-from { width: 0 }
-to { width: 100% }
+  from { width: 0 }
+  to { width: 100% }
 }
+
 header {
-text-align: center;
+  text-align: center;
 }
 
 .name,h2 {
-  font-family: 'Itim', cursive;
-font-size: 40px;
-font-weight: 500;
-text-transform: uppercase;
-letter-spacing: 3px;
-color: rgb(152, 255, 234);
-text-shadow: 2px 2px rgb(186, 163, 249);
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #FFFFFF;
+  text-shadow: 2px 2px #333333;
 }
+
 h4{
-  font-family: 'Itim', cursive;
-font-size: 17px;
-font-weight: 300;
-text-transform: uppercase;
-letter-spacing: 3px;
-color: rgb(186, 163, 249);
-text-shadow: 1px 1px rgb(152, 255, 234);
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #CCCCCC;
+  text-shadow: 1px 1px #444444;
 }
+
 img {
   border-radius: 80%;
   opacity: 0;
@@ -60,6 +65,7 @@ img {
     opacity: 1;
   }
 }
+
 nav {
   margin-top: 2%;
   position: absolute;
@@ -68,13 +74,14 @@ nav {
   display: flex;
   justify-content: flex-end;
   width: 40%;
-  font-family: 'Itim', cursive;
-  font-size: 20px;
-  font-weight: 60;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3px;
   z-index: 2;
 }
+
 nav a:hover {
   position: relative;
 }
@@ -86,7 +93,7 @@ nav a:hover:after {
   left: 0;
   right: 0;
   height: 2px;
-  background-color: rgb(186, 163, 249); /* Change this color to desired color */
+  background-color: #CCCCCC; /* Change this color to desired color */
   animation: underline-move 1s ease-in-out forwards;
 }
 
@@ -98,14 +105,16 @@ nav a:hover:after {
     width: 100%;
   }
 }
+
 a {
-margin-left: 10px;
-text-decoration: none;
-color: rgb(152, 255, 234);
-text-shadow: 2px 2px rgb(186, 163, 249);
+  margin-left: 10px;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-shadow: 2px 2px #333333;
 }
+
 .area{
-    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+  background: linear-gradient(to right, #1C2541, #2A344D);
 }
 
 .circles{
