@@ -4,21 +4,22 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <style>
-        .header-container {
-            margin-top: 4%;
-            margin-left: 7%;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-      }
-     body {
+ .header-container {
+  margin-top: 4%;
+  margin-left: 7%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+body {
   background-color: #377f8d;
   display: flex;
-  
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
+
 .typed {
   overflow: hidden;
   white-space: nowrap;
@@ -28,32 +29,36 @@
   animation-timing-function: steps(30, end);
   animation-fill-mode: forwards;
 }
+
 @keyframes typing {
-from { width: 0 }
-to { width: 100% }
+  from { width: 0 }
+  to { width: 100% }
 }
-.name,h2 {
+
+.name, h2 {
   font-family: 'Itim', cursive;
-font-size: 40px;
-font-weight: 500;
-text-transform: uppercase;
-letter-spacing: 3px;
-color: rgb(152, 255, 234);
-text-shadow: 2px 2px rgb(186, 163, 249);
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #98ffea;
+  text-shadow: 2px 2px #baa3f9;
 }
-h4{
-    text-align: center;
+
+h4 {
+  text-align: center;
   font-family: 'Itim', cursive;
-font-size: 17px;
-font-weight: 300;
-text-transform: uppercase;
-letter-spacing: 3px;
-color: rgb(152, 255, 234);
-text-shadow: 2px 2px rgb(186, 163, 249);
+  font-size: 17px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #98ffea;
+  text-shadow: 2px 2px #baa3f9;
 }
+
 img {
-height: 250px;
-width: 220px;
+  height: 250px;
+  width: 220px;
   border-radius: 5%;
   opacity: 0;
   animation: fadeIn 4s ease-in-out forwards;
@@ -67,6 +72,7 @@ width: 220px;
     opacity: 1;
   }
 }
+
 nav {
   margin-right: 0.5%;
   margin-top: 2%;
